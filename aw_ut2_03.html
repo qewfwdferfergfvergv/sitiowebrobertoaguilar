@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>aw_ut2_03</title>
+</head>
+<body background="imagenes/wp9212128.png">  
+    <h1 align="center">Formulario de adopción</h1>
+    <form action="enviado.html" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Información del adoptante</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" maxlength="50" placeholder="Ingresa tu nombre" required><br><br>
+
+            <label for="comentarios">Comentarios a tener en cuenta:</label>
+            <textarea id="comentarios" name="comentarios" placeholder="Escribe tus comentarios aquí" required></textarea><br><br>
+
+            <label for="genero">Edad:</label><br>
+            <input type="radio" id="adulto" name="edad" value="adulto">
+            <label for="adulto">Adulto</label><br>
+            <input type="radio" id="joven" name="edad" value="joven">
+            <label for="joven">Joven</label><br><br>
+
+            <label for="intereses">Tipo de gato que quieres::</label><br>
+            <input type="checkbox" id="tranquilo" name="tranquilo" value="tranquilo">
+            <label for="tranquilo">Tranquilo</label><br>
+            <input type="checkbox" id="jugueton" name="jugueton" value="jugueton">
+            <label for="jugueton">Jugueton</label><br><br>
+
+            <label for="archivo">Sube un archivo en caso de que nos tengas que mandar algo a tener en cuenta:</label>
+            <input type="file" id="archivo" name="archivo"><br><br>
+
+            <label for="ciuad">Ciudad:</label>
+            <select id="ciudad" name="ciudad" required>
+                <option value="Or">Orihuela</option>
+                <option value="Bg">Bigastro</option>
+                <option value="Co">Correntias</option>
+            </select><br><br>
+
+            <label for="idiomas">Idiomas (Hay gatos que solo entienden un idioma)):</label>
+            <select id="idiomas" name="idiomas[]" multiple required>
+                <option value="es">Español</option>
+                <option value="en">Inglés</option>
+                <option value="fr">Francés</option>
+                <option value="po">Portugues</option>
+                <option value="al">Aleman</option>
+            </select><br><br>
+
+            <label for="codigo">El codigo postal de la ciudad de nuestra protectora</label>
+            <input type="text" id="codigo" name="codigo" readonly value="03300"><br><br>
+
+            <label for="nombreGato">Nombre del gato que vas a querer en la cartilla (acceso rápido alt + g):</label>
+<input type="text" id="nombreGato" name="nombreGato" accesskey="g" tabindex="1"><br><br>
+
+            <input type="hidden" name="oculto" value="valor_oculto">
+        </fieldset><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Resetear</button>
+        <button type="button" onclick="alert('Debes ser mayor de 18 para adoptar un gato')">Información adicional</button>
+    </form><br>
+
+    <table>
+        <tr>
+            <td style="text-align: center;">
+                <p><b>Todo sobre los gatos</b></p>
+                <a href="aw_ut2_01.html">
+                    <img src="imagenes/b.png" alt="Todo sobre los gatos" width="200" height="200">
+                </a>
+            </td>
+            <td style="text-align: center;">
+                <p><b>Obesidad en gatos</b></p>
+                <a href="aw_ut2_02.html">
+                    <img src="imagenes/c.png" alt="Obesidad en gatos" width="200" height="200">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
